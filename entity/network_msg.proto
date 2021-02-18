@@ -1,0 +1,25 @@
+syntax = "proto2";
+
+package net.msg;
+
+message RequestMsg {
+	enum CmdType{
+		NewOrUpdate = 1;
+		Check = 2;
+		Revoke = 3;
+		View = 4;	
+	}
+	required CmdType cmdType = 1;
+	required string serverId = 2;
+	required string clientId = 3;
+	optional string authCode = 4;
+	optional string r1 = 5;
+}
+
+message ResponseMsg {
+	required int32 code = 1;
+	required string serverId = 2;
+	required string clientId = 3;
+	optional string r2 = 4;
+	optional int32 secKeyId = 5;
+}
