@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/xiaohun/Desktop/C++ Project/share-key-platform/entity/SecKey.hpp
+string.h
+-
+
+/home/xiaohun/Desktop/C++ Project/share-key-platform/main.cpp
+iostream
+-
+utils/SecKeyShm.h
+/home/xiaohun/Desktop/C++ Project/share-key-platform/utils/SecKeyShm.h
+
+/home/xiaohun/Desktop/C++ Project/share-key-platform/utils/SecKeyShm.h
+sys/types.h
+-
+sys/ipc.h
+-
+sys/shm.h
+-
+string
+-
+../entity/SecKey.hpp
+/home/xiaohun/Desktop/C++ Project/share-key-platform/entity/SecKey.hpp
+

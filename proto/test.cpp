@@ -20,6 +20,6 @@ int main(){
         exit(-1);
     }
 
-//    google::protobuf::ShutdownProtobufLibrary();
+    google::protobuf::ShutdownProtobufLibrary();
 	return 0;	
 }
