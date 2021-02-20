@@ -10,12 +10,6 @@
 string.h
 -
 
-/home/xiaohun/Desktop/C++ Project/share-key-platform/main.cpp
-iostream
--
-utils/SecKeyShm.h
-/home/xiaohun/Desktop/C++ Project/share-key-platform/utils/SecKeyShm.h
-
 /home/xiaohun/Desktop/C++ Project/share-key-platform/utils/SecKeyShm.h
 sys/types.h
 -
@@ -27,4 +21,10 @@ string
 -
 ../entity/SecKey.hpp
 /home/xiaohun/Desktop/C++ Project/share-key-platform/entity/SecKey.hpp
+
+/home/xiaohun/Desktop/C++ Project/share-key-platform/utils/test.cpp
+iostream
+-
+../utils/SecKeyShm.h
+/home/xiaohun/Desktop/C++ Project/share-key-platform/utils/SecKeyShm.h
 

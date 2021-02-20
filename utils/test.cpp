@@ -14,6 +14,12 @@ int main1() {
         printf("%s\r\n", node->clientId);
         printf("%s\r\n", node->secKey);
     }
+
+    secKeyShm.rmSecKey(node);
+    node = secKeyShm.getSecKey(clientId, serverId);
+    if (node == nullptr) {
+        printf("已删除!");
+    }
     free(node);
     return 0;
 }
