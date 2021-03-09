@@ -1,3 +1,3 @@
-/home/xiaohun/Desktop/C++ Project/share-key-platform/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/xiaohun/Desktop/C++ Project/share-key-platform/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/xiaohun/Desktop/C++ Project/share-key-platform/cmake-build-debug/CMakeFiles/share_key_platform.dir
+D:/Projects/safe-key-platform/cmake-build-debug/CMakeFiles/share_key_platform.dir
+D:/Projects/safe-key-platform/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Projects/safe-key-platform/cmake-build-debug/CMakeFiles/rebuild_cache.dir

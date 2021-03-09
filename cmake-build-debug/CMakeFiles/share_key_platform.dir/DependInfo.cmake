@@ -4,12 +4,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/xiaohun/Desktop/C++ Project/share-key-platform/main.cpp" "/home/xiaohun/Desktop/C++ Project/share-key-platform/cmake-build-debug/CMakeFiles/share_key_platform.dir/main.cpp.o"
-  "/home/xiaohun/Desktop/C++ Project/share-key-platform/proto/network_msg.pb.cc" "/home/xiaohun/Desktop/C++ Project/share-key-platform/cmake-build-debug/CMakeFiles/share_key_platform.dir/proto/network_msg.pb.cc.o"
-  "/home/xiaohun/Desktop/C++ Project/share-key-platform/utils/SecKeyShm.cpp" "/home/xiaohun/Desktop/C++ Project/share-key-platform/cmake-build-debug/CMakeFiles/share_key_platform.dir/utils/SecKeyShm.cpp.o"
-  "/home/xiaohun/Desktop/C++ Project/share-key-platform/utils/test.cpp" "/home/xiaohun/Desktop/C++ Project/share-key-platform/cmake-build-debug/CMakeFiles/share_key_platform.dir/utils/test.cpp.o"
+  "D:/Projects/safe-key-platform/main.cpp" "D:/Projects/safe-key-platform/cmake-build-debug/CMakeFiles/share_key_platform.dir/main.cpp.obj"
+  "D:/Projects/safe-key-platform/proto/network_msg.pb.cc" "D:/Projects/safe-key-platform/cmake-build-debug/CMakeFiles/share_key_platform.dir/proto/network_msg.pb.cc.obj"
+  "D:/Projects/safe-key-platform/utils/SecKeyShm.cpp" "D:/Projects/safe-key-platform/cmake-build-debug/CMakeFiles/share_key_platform.dir/utils/SecKeyShm.cpp.obj"
+  "D:/Projects/safe-key-platform/utils/test.cpp" "D:/Projects/safe-key-platform/cmake-build-debug/CMakeFiles/share_key_platform.dir/utils/test.cpp.obj"
   )
-set(CMAKE_CXX_COMPILER_ID "GNU")
+set(CMAKE_CXX_COMPILER_ID "MSVC")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH

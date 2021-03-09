@@ -7,7 +7,7 @@
 #include <string.h>
 #include "SecKeyShm.h"
 
-SecKeyShm::SecKeyShm(key_t key, int maxNode) : shm_ptr(nullptr) {
+SecKeyShm::SecKeyShm(key_t key, int maxNode) : length(0), shm_ptr(nullptr) {
     this->max_node = maxNode;
     this->shm_id = shmget(key, maxNode * sizeof(SecKeyNode), IPC_CREAT | 0664);
     if (this->shm_id == -1) {
@@ -51,11 +51,11 @@ void SecKeyShm::unMapShm() {
 }
 
 SecKeyNode *SecKeyShm::getSecKey(const char *clientId, const char *serverId) {
-    SecKeyNode *node = nullptr;
-    SecKeyNode *start = static_cast<SecKeyNode *>(this->mapShm());
+    SecKeyNode *node = (SecKeyNode *) calloc(1, sizeof(SecKeyNode));
+    SecKeyNode *start = (SecKeyNode *) this->mapShm();
     for (int i = 0; i < this->length; ++i) {
-        if (strcmp(start[i].serverId, serverId) == 0 && strcmp(start[i].clientId, clientId) == 0) {
-            node = static_cast<SecKeyNode *>(calloc(1, sizeof(SecKeyNode)));
+        if (memcmp(node, &start[i], sizeof(SecKeyNode)) != 0 && strcmp(start[i].serverId, serverId) == 0 &&
+            strcmp(start[i].clientId, clientId) == 0) {
             memcpy(node, start + i, sizeof(SecKeyNode));
             break;
         }
