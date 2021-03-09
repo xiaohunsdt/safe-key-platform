@@ -34,7 +34,7 @@ struct RequestMsgDefaultTypeInternal {
     RequestMsg _instance;
   };
 };
-PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_NO_DESTROY RequestMsgDefaultTypeInternal _RequestMsg_default_instance_;
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT RequestMsgDefaultTypeInternal _RequestMsg_default_instance_;
 constexpr ResponseMsg::ResponseMsg(
   ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
   : serverid_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
@@ -50,7 +50,7 @@ struct ResponseMsgDefaultTypeInternal {
     ResponseMsg _instance;
   };
 };
-PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_NO_DESTROY ResponseMsgDefaultTypeInternal _ResponseMsg_default_instance_;
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT ResponseMsgDefaultTypeInternal _ResponseMsg_default_instance_;
 }  // namespace msg
 }  // namespace net
 static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_network_5fmsg_2eproto[2];
